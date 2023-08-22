@@ -8,6 +8,7 @@ import Header from "../Components/Header"
 import Footer from "../Components/Footer"
 
 const Container = styled.div`
+    padding-top: 80px;
 `
 
 const Router = () => {
