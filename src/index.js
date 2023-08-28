@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
-import Router from "./Router/Router";
 import GlobalStyles from "./Styles/GlobalStyles";
+import Providers from "./Providers";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
         <GlobalStyles />
-        <Router />
+        <Providers />
     </React.StrictMode>
 );
 
