@@ -43,7 +43,7 @@ const Type = ({ type }) => {
             typeStyle.background = '#40ddeb'
             typeStyle.color = 'black'
             break
-        case 'fight':
+        case 'fighting':
             typeStyle.background = '#902d02'
             typeStyle.color = 'white'
             break

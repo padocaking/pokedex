@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import PokemonSearch from '../Components/PokedexSearch'
+import PokedexDisplay from '../Components/PokedexDisplay'
 
 const Container = styled.div`
 
@@ -21,6 +22,7 @@ const Pokedex = () => {
                 <h1>POKÉDEX</h1>
             </Title>
             <PokemonSearch />
+            <PokedexDisplay />
         </Container>
     )
 }
