@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import PokemonSearch from '../Components/PokedexSearch'
+import { usePokedex } from '../Providers/PokedexProvider'
+import { useEffect } from 'react'
 
 const Container = styled.div`
 
@@ -15,10 +17,20 @@ const Title = styled.section`
 `
 
 const Pokedex = () => {
+    const { pokemonList, addPokemonLimit, renderPokemons, pokemonLimit } = usePokedex()
+
+    const click = () => {
+        addPokemonLimit(12)
+    }
+
+    useEffect(() => {
+        renderPokemons()
+    }, [pokemonLimit])
+
     return (
         <Container>
             <Title>
-                <h1>POKÉDEX</h1>
+                <h1 onClick={click}>POKÉDEX</h1>
             </Title>
             <PokemonSearch />
         </Container>
