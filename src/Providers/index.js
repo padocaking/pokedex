@@ -4,11 +4,11 @@ import SearchProvider from "./SearchProvider";
 
 const Providers = () => {
     return (
-        <PokedexProvider>
-            <SearchProvider>
-                <App />
-            </SearchProvider>
-        </PokedexProvider>
+        <SearchProvider>
+            <PokedexProvider>
+                    <App />
+            </PokedexProvider>
+        </SearchProvider>
     );
 };
 

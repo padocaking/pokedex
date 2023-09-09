@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components'
 import Type from './Type'
+import theme from '../Styles/Theme'
 
 const grow = keyframes`
  from {
@@ -83,6 +84,11 @@ const TypeContainer = styled.div`
 
     > div {
         width: 75px;
+
+        &:hover {
+            box-shadow: 0px 0px 0px 1px inset white;
+            transition: 0.1s linear all;
+        }
     }
 `
 
